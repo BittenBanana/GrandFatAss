@@ -20,7 +20,7 @@ public class PlayerDeathController : MonoBehaviour
         if (isDead)
         {
             timer += Time.deltaTime;
-            if (timer >= 1.0f)
+            if (timer >= 1.5f)
             {
                 WastedObject.SetActive(true);
                 PoliceEffect.SetActive(false);
