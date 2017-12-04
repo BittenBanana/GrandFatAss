@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: HotDog
   m_EditorClassIdentifier: 
   fat: 0.3
-  energy: 0.3
+  energy: 0.35
   requirementsPool:
   - {fileID: 11400000, guid: 706df194584e05140a9bcceb23c0d699, type: 2}
   - {fileID: 11400000, guid: d1ce99a28c02adb4b9467f2198091d18, type: 2}
