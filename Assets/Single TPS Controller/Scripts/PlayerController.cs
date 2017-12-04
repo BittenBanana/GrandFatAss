@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
         horizontal = transform.eulerAngles.y;
         rb = GetComponent<Rigidbody>();
     }
@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         Control();
         Anim();
     }

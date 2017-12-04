@@ -28,6 +28,7 @@ public class PlayerDeathController : MonoBehaviour
                 Player.GetComponent<PlayerController>().enabled = false;
                 GetComponent<GameTimer>().CanCount = false;
                 Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
