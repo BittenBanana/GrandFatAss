@@ -32,7 +32,10 @@ public class PlayerHealth : MonoBehaviour
 
         if (playerController.verticalMove > 0.5f)
         {
-            weight -= Time.deltaTime * fatWalkLossPerSec;
+            if(weight - Time.deltaTime * fatWalkLossPerSec >= 0)
+            {
+                weight -= Time.deltaTime * fatWalkLossPerSec;
+            }
             energy -= Time.deltaTime * energyWalkLossPerSec;
         }
         else
