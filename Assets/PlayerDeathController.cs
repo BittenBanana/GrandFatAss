@@ -27,6 +27,7 @@ public class PlayerDeathController : MonoBehaviour
                 EneFatGUI.SetActive(false);
                 Player.GetComponent<PlayerController>().enabled = false;
                 GetComponent<GameTimer>().CanCount = false;
+                Cursor.visible = true;
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
